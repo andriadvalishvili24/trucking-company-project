@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./contact.css" />
+    <title>Contact</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <input type="checkbox" id="menuToggle" />
+        <label for="menuToggle" class="burgerIcon">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+
+        <div class="brandLogo">
+          <a href="index.html">
+            <img
+              src="https://static.wixstatic.com/shapes/c837a6_fb7692d17adf4557b829da042bc0cc04.svg"
+              alt="Stellanova Logo"
+            />
+          </a>
+        </div>
+
+        <div class="navLinks">
+          <a href="./services.html">Services</a>
+          <a href="./about.html">About Us</a>
+          <a href="./contact.html" class="active">Contact</a>
+        </div>
+
+        <div class="btnQuote">
+          <a href="./contact.html">Get a Quote</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="contactSection">
+        <div class="contactFormContainer">
+          <h1 class="contactTitle">
+            LET'S GET<br />
+            MOVING
+          </h1>
+          <p class="contactSubtitle">
+            Reach out for a custom quote or to discuss your logistics needs with
+            an expert.
+          </p>
+
+          <form class="contactForm">
+            <div class="formRow">
+              <div class="formGroup">
+                <label for="firstName">First name *</label>
+                <input type="text" id="firstName" required />
+              </div>
+
+              <div class="formGroup">
+                <label for="company">Company *</label>
+                <input type="text" id="company" required />
+              </div>
+            </div>
+
+            <div class="formRow">
+              <div class="formGroup">
+                <label for="email">Email *</label>
+                <input type="email" id="email" required />
+              </div>
+
+              <div class="formGroup">
+                <label for="phone">Phone number *</label>
+                <div class="phoneInput">
+                  <select class="countryCode">
+                    <option value="us">🌐</option>
+                  </select>
+                  <input type="tel" id="phone" required />
+                </div>
+              </div>
+            </div>
+
+            <div class="formGroup fullWidth">
+              <label for="service">Service of Interest</label>
+              <select id="service" class="selectInput">
+                <option value="" disabled selected></option>
+                <option value="freight">Freight Transport</option>
+                <option value="logistics">Logistics Solutions</option>
+                <option value="warehousing">Warehousing</option>
+              </select>
+            </div>
+
+            <div class="formGroup fullWidth">
+              <label for="message">Message</label>
+              <textarea id="message" rows="1"></textarea>
+            </div>
+
+            <button type="submit" class="btnSubmit">Send Message</button>
+          </form>
+        </div>
+
+        <div class="contactInfoContainer">
+          <div class="infoBlock">
+            <h2>ADDRESS</h2>
+            <p>
+              500 Terry Francine<br />
+              St, San Francisco,<br />
+              CA 94158
+            </p>
+          </div>
+
+          <div class="infoBlock">
+            <h2>EMAIL</h2>
+            <a href="mailto:info@mysite.com">info@mysite.com</a>
+          </div>
+
+          <div class="infoBlock">
+            <h2>TEL</h2>
+            <a href="tel:123-456-7890">123-456-7890</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="siteFooter">
+      <div class="footerWrapper">
+        <div class="footerTop">
+          <h1 class="brandHeading">STELLANOVA</h1>
+          <div class="socialLinks">
+            <a href="#">INSTAGRAM</a>
+            <a href="#">LINKEDIN</a>
+            <a href="#">X</a>
+          </div>
+        </div>
+
+        <div class="footerCard">
+          <div class="contactGrid">
+            <p class="contactAddress">
+              500 Terry Francine St, San Francisco, CA 94158
+            </p>
+            <p class="contactEmail">info@mysite.com</p>
+            <p class="contactPhone">000-000-000</p>
+          </div>
+
+          <div class="footerBottom">
+            <div class="policyLinks">
+              <a href="#">Privacy Policy</a>
+              <a href="#">Terms & Conditions</a>
+              <a href="#">Accessibility Statement</a>
+              <a href="#">Refund Policy</a>
+            </div>
+            <p class="copyright">
+              © 2035 by Stellanova Haulage. powered and secured by
+              <a href="#">Wix</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
